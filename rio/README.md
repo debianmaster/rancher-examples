@@ -12,5 +12,5 @@ rio run -p 8080/http -e HASURA_GRAPHQL_ADMIN_SECRET=supersecret -e HASURA_GRAPHQ
 ## Code server
 
 ```sh
-rio run --name=code codercom/code-server --allow-http --no-auth
+rio run -p 8443/http --name=code codercom/code-server --allow-http --no-auth
 ```
