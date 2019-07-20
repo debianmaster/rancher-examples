@@ -9,6 +9,15 @@ rio run -p 8080/http -e HASURA_GRAPHQL_ADMIN_SECRET=supersecret -e HASURA_GRAPHQ
 ```
 
 
+```sh
+rio run -p 443/http --name=drone -e DRONE_KUBERNETES_ENABLED=true -e DRONE_KUBERNETES_NAMESPACE=default \
+-e DRONE_GITHUB_SERVER=drone.cloud.example.io \
+-e DRONE_GITHUB_CLIENT_ID=edummydummy5c8c \
+-e DRONE_GITHUB_CLIENT_SECRET=791512dummydummydummyc47567e4 \
+-e DRONE_RPC_SECRET=bea26a2221fd8090ea38720fc445eca6 \
+-e DRONE_SERVER_PROTO=https drone/drone:1.0.0
+```
+
 ## Code server
 
 ```sh
